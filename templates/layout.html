@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!-- This html file is the parent template-->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -8,7 +10,13 @@
       <title>Flask Blog</title>
     {% endif %}
   </head>
+
+  <!-- The content inside this body tag can be filled
+       by child templates, also known as Jinja (Python template engine) -->
+
   <body>
     {% block content %}{% endblock %}
   </body>
+
+
 </html>
