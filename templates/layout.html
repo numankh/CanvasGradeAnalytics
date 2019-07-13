@@ -27,11 +27,19 @@
     <header class="site-header">
         <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
           <div class="container">
+
+            <!-- Main title on left for nav bar -->
             <a class="navbar-brand mr-4" href="/">Flask Blog</a>
+
+            <!-- If web page on smaller screen, other links are in a list-->
+            <!-- This creates the actual button to access the links -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- This stores the links in the collapsed navbar -->
             <div class="collapse navbar-collapse" id="navbarToggle">
+              <!-- Navbar Left Side -->
               <div class="navbar-nav mr-auto">
                 <a class="nav-item nav-link" href="{{ url_for('home') }}">Home</a>
                 <a class="nav-item nav-link" href="{{ url_for('about') }}">About</a>
